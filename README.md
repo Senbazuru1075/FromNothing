@@ -1,2 +1,2 @@
 # FromNothing
-FromNothing is a software application that helps people make money without shareconomy. 
+FromNothing is a software application that helps people make money without shareconomy. The goal is to help at least 27 people without any skills, knowledge, or experience to create the life of their dreams doing what they want to do. The current version of this app is the first bridging point of a larger application. There is no learning waste. Every path implemented has a natural progression. If you would like to contribute please message me. Please contact me if you would like to fork the application to use for your own purposes.
