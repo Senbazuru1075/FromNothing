@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct DealHelperApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           StartupView(viewModel: StartupViewModel())
         }
     }
 }
