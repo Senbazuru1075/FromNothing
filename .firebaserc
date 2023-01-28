@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "fromnothing-37c9b",
+    "development": "fromnothing-37c9b",
+    "staging": "fromnothing-37c9b"
+  },
+  "targets": {},
+  "etags": {}
+}

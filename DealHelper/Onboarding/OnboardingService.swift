@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFunctions
 
 protocol OnboardingService {
     func downloadOnboardingData() async throws -> OnboardingItemResponse?
@@ -16,7 +18,7 @@ class FakeOnboardingServiceImplementation: OnboardingService {
     var error: Error?
     
     func downloadOnboardingData() -> OnboardingItemResponse? {
-        if let url = Bundle.main.url(forResource: "onboardingdata", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "onboardingdata", withExtension: ".json") {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
@@ -29,4 +31,25 @@ class FakeOnboardingServiceImplementation: OnboardingService {
         return nil
     }
     
+}
+
+class OnboardingServiceImplementation: OnboardingService {
+    var error: Error?
+    var onboardingItems: OnboardingItemResponse = OnboardingItemResponse(onboardingItems: [])
+    func downloadOnboardingData() async throws -> OnboardingItemResponse? {
+        
+        let functions = Functions.functions()
+        do {
+            let result = try await functions.httpsCallable("getOnboardingItems").call()
+        } catch {
+            print(error)
+        }
+        let result = try await functions.httpsCallable("getOnboardingItems").call()
+        let data = result.data as! Data
+        print(data)
+        let decoder = try JSONDecoder().decode(OnboardingItemResponse.self, from: data)
+        print(decoder.onboardingItems)
+        self.onboardingItems = decoder
+        return self.onboardingItems
+    }
 }

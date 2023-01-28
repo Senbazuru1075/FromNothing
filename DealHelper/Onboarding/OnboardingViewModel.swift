@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 protocol OnboardingDelegate: AnyObject {
     func onOnboardingComplete()
@@ -15,6 +16,8 @@ class OnboardingViewModel: ObservableObject {
     @Published var items: [OnboardingItem] = []
     private weak var delegate: OnboardingDelegate?
     var service: OnboardingService
+    var seconds: Int = 0
+
     
     init(delegate: OnboardingDelegate? = nil, service: OnboardingService) {
         self.delegate = delegate
@@ -23,7 +26,9 @@ class OnboardingViewModel: ObservableObject {
     func fetchOnboardingItems() async throws {
         let response = try await service.downloadOnboardingData()
         guard let onboardingItems = response?.onboardingItems else { throw service.error! }
-        self.items = onboardingItems
+        DispatchQueue.main.async {
+            self.items = onboardingItems
+        }
     }
     func onCompletionButtonPressed() {
         delegate?.onOnboardingComplete()

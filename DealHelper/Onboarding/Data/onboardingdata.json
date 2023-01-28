@@ -1,9 +1,9 @@
 {
-  "onboarding": [
+  "onboardingItems": [
     {
       "id": 1,
       "title": "Welcome to Clear Acquire",
-      "description": "Dreamquisition is an app created by Clear Acquire that helps people buy businesses. It calculates whether or not a deal is worth pursuing qualitatively and quantitatively. This is not a substitute for professional advice. It is meant as more of guiding principles to help you lean into or away from pursuing the purchase of a business. Dreamquisition also has features built for starting a business! We do not teach people the lean startup method or any other startup elements. You should check those sources if you plan to start a tech company. What we teach are the fundamental principles of small business.",
+      "description": "FromNothing is an app created by Clear Acquire that helps people buy businesses. It calculates whether or not a deal is worth pursuing qualitatively and quantitatively. This is not a substitute for professional advice. It is meant as more of guiding principles to help you lean into or away from pursuing the purchase of a business. FromNothing also has features built for starting a business! We do not teach people the lean startup method or any other startup elements. You should check those sources if you plan to start a tech company. What we teach are the fundamental principles of small business.",
       "url": "https://clearacquire.com"
     },
     {
