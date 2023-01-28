@@ -15,20 +15,24 @@ struct OnboardingView: View {
     }
     
     var body: some View {
-       
+        ZStack {
             ForEach(viewModel.items) {
                 item in
                 ZStack {
                     OnboardingItemView(viewModel: OnboardingItemViewModel(item: item))
+                        .onTapGesture {
+                            
+                    }
                 }
             }
-            .task {
-                do {
-                    try await self.viewModel.fetchOnboardingItems()
-                } catch let error {
-                    self.error = error
-                }
+        }
+        .task {
+            do {
+                try await self.viewModel.fetchOnboardingItems()
+            } catch let error {
+                self.error = error
             }
+        }
     }
 }
 

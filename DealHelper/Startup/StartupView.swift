@@ -10,7 +10,7 @@ import SwiftUI
 struct StartupView: View {
     
     @ObservedObject private var viewModel: StartupViewModel
-    let onboardingService = FakeOnboardingServiceImplementation()
+    let onboardingService = OnboardingServiceImplementation()
     init(viewModel: StartupViewModel) {
         self.viewModel = viewModel
     }

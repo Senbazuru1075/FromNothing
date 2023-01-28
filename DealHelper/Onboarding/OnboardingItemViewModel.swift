@@ -7,10 +7,11 @@
 
 import Foundation
 
+
 class OnboardingItemViewModel: ObservableObject {
     @Published var didPressAndStack: Bool = false {
         didSet {
-            // Log analytics events
+          //log presses
         }
     }
     let item: OnboardingItem
@@ -20,6 +21,6 @@ class OnboardingItemViewModel: ObservableObject {
     }
     
     func logPress() {
-        
+       
     }
 }
