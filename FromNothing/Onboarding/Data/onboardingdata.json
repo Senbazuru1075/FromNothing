@@ -1,0 +1,52 @@
+{
+  "onboardingItems": [
+    {
+      "id": 1,
+      "title": "Welcome to Clear Acquire",
+      "description": "FromNothing is an app created by Clear Acquire that helps people buy businesses. It calculates whether or not a deal is worth pursuing qualitatively and quantitatively. This is not a substitute for professional advice. It is meant as more of guiding principles to help you lean into or away from pursuing the purchase of a business. FromNothing also has features built for starting a business! We do not teach people the lean startup method or any other startup elements. You should check those sources if you plan to start a tech company. What we teach are the fundamental principles of small business.",
+      "url": "https://clearacquire.com"
+    },
+    {
+      "id": 2,
+      "title": "How to Use the Software",
+      "description": "When you create your account, you'll have access to the default courses and the default checklists. You'll need to purchase the more in-depth courses and checklists. Import the checklists into your To-Do's. Then, handle each task and enter any data as necessary into the calculators. Eventually, you'll get a deal analysis calculation that will tell you whether or not the deal is worth doing and give you some perspective on how well it will work out.",
+      "url": null
+    },
+    {
+      "id": 3,
+      "title": "Agreements You Make by Using the App",
+      "description": "Because Dreamquisition is not a substitute for professional advice, you accept all responsibility and all liabilities incurred from starting or purchasing a business. We do not and will not accept any liability. Further, by using this app, you relinquish all claims against us and hold us harmless for any liabilities or problems caused by your own action.",
+      "url": null
+    },
+    {
+      "id": 4,
+      "title": "Data Information",
+      "description": "We subscribe to the belief that all of your data is yours to keep. You may request any and all of your data by emailing customerlove@clearacquire.com. You may also delete your account and cancel any subscriptions at any time. We would prefer you to stay on the platform though because we will have way more amazing features soon.",
+      "url": null
+    },
+    {
+      "id": 5,
+      "title": "Privacy Policy",
+      "description": "You will find our privacy policy in the help center. You may also click through to view our privacy policy through this app. We’ve listed the link below.",
+      "url": "https://clearacquire.com/privacy-policy/"
+    },
+    {
+      "id": 6,
+      "title": "Refund and Returns Policy",
+      "description": "You can find our refund and returns policy in the help center as well. You may also click through to view our refund and returns policy through this app. We’ve listed the link below.",
+      "url": "https://clearacquire.com/refunds-and-returns-policy/"
+    },
+    {
+      "id": 7,
+      "title": "Terms of Service",
+      "description": "You can find our software application terms of service on our website and in the help center as well. The link to read is below.",
+      "url": "https://clearacquire.com/dreamquisition-terms-of-service/"
+    },
+    {
+      "id": 8,
+      "title": "Full Legal Disclaimer",
+      "description": "This software application, Dreamquisition, is owned and operated by Oceana LLC, a limited liability company headquartered in Michigan, USA. Clear Acquire is a participant in the Amazon Services LLC Associates Program. As Amazon Associates, we earn from qualifying purchases. Oceana LLC also participates in affiliate programs with Bluehost, Clickbank, CJ, ShareASale, and other sites. Clear Acquire is compensated for referring traffic and business to these companies. The Clear Acquire software application provides general information about business buying and business related subjects. The information and other content provided in this software application should not be construed as financial instruction or advice. The information in this  is not a substitute for professional legal or financial advice. If you or any other person has a financial or legal concern, you should consult with certified financial advisors, certified public accountants, licensed attorneys or other licensed financial professionals. Clear Acquire only provides information for educational purposes. This designation does not mean that you should avoid consulting a certified advisor before taking a new financial risk. We do our best to keep our software application updated, but it is your responsibility to make sure you have made wise financial decisions. No communication by Clear Acquire Inc. or any of its affiliates (collectively, “Oceana LLC”), through any medium, should be construed or is intended to be a recommendation to purchase, sell or hold any security or otherwise to be investment, tax, financial, accounting, legal, regulatory or compliance advice. All securities involve risk and may result in significant loss. You assume full responsibility and hold harmless the Clear Acquire Dreamquisition, the Dreamquisition software application, and Oceana LLC for any and all losses incurred as a result of following advice on the blog or the Dreamquisition software application. The Clear Acquire Dreamquisition and Oceana LLC accept no responsibility for financial losses or negative repercussions incurred from following said advice. It is up to the user and reader to exercise sound judgment and discretion.",
+      "url": "https://clearacquire.com/dreamquisition-legal-disclaimer/"
+    }
+  ]
+}
