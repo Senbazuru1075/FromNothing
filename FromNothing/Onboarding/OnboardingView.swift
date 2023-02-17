@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AVFoundation
+
 
 struct OnboardingView: View {
     @ObservedObject private var viewModel: OnboardingViewModel
@@ -19,16 +21,18 @@ struct OnboardingView: View {
             ForEach(viewModel.items) {
                 item in
                 ZStack {
-                    OnboardingItemView(viewModel: OnboardingItemViewModel(item: item))
-                        .onTapGesture {
-                            
-                    }
+                        OnboardingItemView(viewModel: OnboardingItemViewModel(item: item))
+                            .zIndex(1)
                 }
             }
+            VideoView(player: AVPlayer(url: viewModel.url))
+                .zIndex(-1)
         }
         .task {
             do {
                 try await self.viewModel.fetchOnboardingItems()
+                try await self.viewModel.fetchOnboardingURL()
+                
             } catch let error {
                 self.error = error
             }

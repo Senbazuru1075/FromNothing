@@ -10,10 +10,9 @@ import AVKit
 
 struct VideoView: View {
     @Environment(\.presentationMode) var presentationMode
-    var url: URL
+    
     var player: AVPlayer
-    init(url: URL, player: AVPlayer) {
-        self.url = url
+    init(player: AVPlayer) {
         self.player = player
     }
     var body: some View {
@@ -35,9 +34,9 @@ struct VideoView: View {
         }
     }
 }
-
-struct VideoView_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoView(url: Bundle.main.url(forResource: "Video", withExtension: ".mov")!, player: AVPlayer(url: Bundle.main.url(forResource: "Video", withExtension: ".mov")!))
-    }
-}
+//
+//struct VideoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VideoView(url: Bundle.main.url(forResource: "Video", withExtension: ".mov")!, player: AVPlayer(url: Bundle.main.url(forResource: "Video", withExtension: ".mov")!))
+//    }
+//}

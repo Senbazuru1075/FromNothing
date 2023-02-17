@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct StartupView: View {
-    
-    @ObservedObject private var viewModel: StartupViewModel
+    let store: StoreOf<Onboarding, Authorized, Signup>
     let onboardingService = FakeOnboardingServiceImplementation()
     
     init(viewModel: StartupViewModel) {

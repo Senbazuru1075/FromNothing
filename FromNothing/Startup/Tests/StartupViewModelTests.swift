@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-@testable import FromNothing
+@testable import DealHelper
 
 class StartupViewModelTests: XCTestCase {
     private var startupViewModel: StartupViewModel!

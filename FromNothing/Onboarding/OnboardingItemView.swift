@@ -72,6 +72,6 @@ struct OnboardingItemView: View {
 
 struct OnboardingItemView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingItemView(viewModel: OnboardingItemViewModel(item: OnboardingItem(id: 1, title: "something", url: "win", description: "yay")))
+        OnboardingItemView(viewModel: OnboardingItemViewModel(item: try! OnboardingItem(from: [:] as! Decoder)))
     }
 }
