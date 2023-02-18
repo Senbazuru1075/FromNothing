@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D02316E329A03F82003066DD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E229A03F82003066DD /* SignupView.swift */; };
 		D02316E929A03F8F003066DD /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E529A03F8F003066DD /* StartupView.swift */; };
-		D02316EA29A03F8F003066DD /* StartupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E729A03F8F003066DD /* StartupViewModelTests.swift */; };
 		D02316EB29A03F8F003066DD /* StartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E829A03F8F003066DD /* StartupViewModel.swift */; };
+		D02F1F4329A07558006EEB36 /* StartupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E729A03F8F003066DD /* StartupViewModelTests.swift */; };
 		D071A035299DB0FF006C8471 /* FromNothingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A034299DB0FF006C8471 /* FromNothingApp.swift */; };
 		D071A037299DB0FF006C8471 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A036299DB0FF006C8471 /* ContentView.swift */; };
 		D071A03D299DB101006C8471 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D071A03C299DB101006C8471 /* Preview Assets.xcassets */; };
@@ -595,7 +595,6 @@
 				D071A0A3299DB1BB006C8471 /* RestrictedCharacterCount.swift in Sources */,
 				D071A087299DB1BB006C8471 /* CustomNeuromorphicToolbar.swift in Sources */,
 				D071A0C4299DB1F5006C8471 /* OnboardingItemView.swift in Sources */,
-				D02316EA29A03F8F003066DD /* StartupViewModelTests.swift in Sources */,
 				D071A0BF299DB1F5006C8471 /* OnboardingService.swift in Sources */,
 				D071A0C0299DB1F5006C8471 /* OnboardingItemViewModel.swift in Sources */,
 				D071A097299DB1BB006C8471 /* SemiCircleNeuromorphicButtonStyle.swift in Sources */,
@@ -612,6 +611,7 @@
 			files = (
 				D071A0CF299DB3C0006C8471 /* OnboardingDelegateFake.swift in Sources */,
 				D071A0D0299DB3D1006C8471 /* OnboardingViewModelTests.swift in Sources */,
+				D02F1F4329A07558006EEB36 /* StartupViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

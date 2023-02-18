@@ -11,16 +11,16 @@ import Foundation
 class OnboardingItemViewModel: ObservableObject {
     @Published var didPressAndStack: Bool = false {
         didSet {
-          //log presses
+            //TODO: - log analytics
         }
     }
-    let item: OnboardingItem
+    let item: OnboardingItem?
     
-    init(item: OnboardingItem) {
+    init(item: OnboardingItem?) {
         self.item = item
     }
     
     func logPress() {
-       
+        self.didPressAndStack == true
     }
 }

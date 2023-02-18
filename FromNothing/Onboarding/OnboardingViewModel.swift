@@ -12,6 +12,7 @@ import FirebaseAuth
 
 protocol OnboardingDelegate: AnyObject {
     func onOnboardingComplete()
+    func onOnboardingItemPressed()
 }
 
 class OnboardingViewModel: ObservableObject {
@@ -40,5 +41,8 @@ class OnboardingViewModel: ObservableObject {
     }
     func onCompletionButtonPressed() {
         delegate?.onOnboardingComplete()
+    }
+    func whenOnboardingItemPressed() {
+        delegate?.onOnboardingItemPressed()
     }
 }
