@@ -34,15 +34,21 @@ class OnboardingViewModel: ObservableObject {
     private weak var delegate: OnboardingDelegate?
     
     //MARK: Service Properties
+    ///The onboarding service handles all of the Firebase API calls for onboarding and JSON Parsing and offline viewing
     var service: OnboardingService
     
+    //MARK: Initializers
     init(delegate: OnboardingDelegate? = nil, service: OnboardingService) {
         self.delegate = delegate
         self.service = service
         Auth.auth().signInAnonymously()
     }
-    @MainActor
-    func fetchOnboardingItems() async throws {
+    
+    //TODO: - Add check for network connectivity to do offline and online viewing
+    
+    //MARK: Functions
+    ///The fetchOnboardingItems function calls the onboarding items to be display and attaches them to the items property in this class
+    @MainActor func fetchOnboardingItems() async throws {
         do {
             let response = try await service.downloadOnboardingDataOffline()
             guard let response else {
@@ -55,14 +61,16 @@ class OnboardingViewModel: ObservableObject {
         }
     }
     
+    //MARK: Delegate Functions
+    ///This function calls the delegate method to complete onboarding through the Startup View Model and move the onboarding process to signup
     private func onOnboardingCompleted() {
         self.delegate?.onOnboardingComplete()
     }
-    
-    
 }
 
+//MARK: Extensions
 extension OnboardingViewModel: OnboardingItemDelegate {
+    ///computed delegate property from pro that calls the check pressed variable to set values for verifying count
     var pressedAndStacked: Bool {
         get {
             return self.checkPressed
@@ -77,7 +85,7 @@ extension OnboardingViewModel: OnboardingItemDelegate {
             }
         }
     }
-
+    ///this delegate method checks for the end of onboarding
     func countItemPresses() {
         print("called count presses")
         for _ in items {
@@ -89,6 +97,7 @@ extension OnboardingViewModel: OnboardingItemDelegate {
 }
 
 extension OnboardingViewModel: OnboardingResetDelegate {
+    ///This delegate method resets the counter for the onboarding view model and helps to restart the onboarding process
     func resetOnboarding() {
         self.counter = 0
     }

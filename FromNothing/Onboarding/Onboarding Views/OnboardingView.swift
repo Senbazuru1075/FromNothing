@@ -9,26 +9,29 @@ import SwiftUI
 import AVFoundation
 import YouTubeiOSPlayerHelper
 
+//MARK: Start of Onboarding View, Displays the array, start of app entry
+///This is the first actual screen of the app
 struct OnboardingView: View {
+    
+    //TODO: - add error handling to this view
+
+    //MARK: View Models
+    ///This is viewmodel property manages the onboarding view
     @ObservedObject private var viewModel: OnboardingViewModel
-    @State private var error: Error? = nil
-    @State private var customPreferenceKey: Int? = 0
     
+    //MARK: Properties
+    ///This is the generic error holder for all possible errors related to onboarding functions
+    @State private var onboardingError: Error? = nil
     
+    //MARK: Initializers
     init(viewModel: OnboardingViewModel) {
         self.viewModel = viewModel
     }
     
-    struct CustomPreferenceKey: PreferenceKey {
-        static var defaultValue: Int? = 0
-        
-        static func reduce(value: inout Int?, nextValue: () -> Int?) {
-            value = nextValue()
-        }
-    }
-    
+    //MARK: Start of View
     var body: some View {
         ZStack {
+            //Neuromorphic background
             Color("mainbackgroundcolor")
                 .ignoresSafeArea()
             ForEach(Array(zip(viewModel.items.indices, viewModel.items)), id: \.0) {
@@ -43,9 +46,10 @@ struct OnboardingView: View {
         }
         .task {
             do {
+                //Handles fetching
                 try await self.viewModel.fetchOnboardingItems()
             } catch let error {
-                self.error = error
+                self.onboardingError = error
             }
         }
     }

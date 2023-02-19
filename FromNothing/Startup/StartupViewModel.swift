@@ -7,11 +7,15 @@
 
 import Foundation
 
+//MARK: Start of StartupViewModel
+///This class manages the display and onboarding of the app overall
 class StartupViewModel: ObservableObject {
     
+    //MARK: Properties
+    ///This property manages the state of the app entry flow
     @Published var state: StartupState = .onboarding
     
-  
+    ///This enum is the startup state holder. It holds the beginning. Signup process. and app entry
     enum StartupState {
         case onboarding
         case signup
@@ -20,10 +24,13 @@ class StartupViewModel: ObservableObject {
     
 }
 
+//MARK: Extensions
 extension StartupViewModel: OnboardingDelegate, StartupResetDelegate {
+    ///This function ends onboarding
     func onOnboardingComplete() {
         state = .signup
     }
+    ///This functino resets the login flow
     func resetLoginFlow() {
         state = .onboarding
     }
