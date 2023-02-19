@@ -18,6 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct FromNothingApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var viewModel: StartupViewModel = StartupViewModel()
+    
     var body: some Scene {
         WindowGroup {
             StartupView(viewModel: viewModel)

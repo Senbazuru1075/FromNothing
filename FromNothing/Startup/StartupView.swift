@@ -6,27 +6,24 @@
 //
 
 import SwiftUI
-
+import YouTubeiOSPlayerHelper
 struct StartupView: View {
-    let onboardingService = FakeOnboardingServiceImplementation()
+    
     @ObservedObject var viewModel: StartupViewModel
+    
     init(viewModel: StartupViewModel) {
         self.viewModel = viewModel
     }
+    
     var body: some View {
         switch viewModel.state {
         case .onboarding:
-            OnboardingView(viewModel: OnboardingViewModel(delegate: viewModel, service: onboardingService))
+            OnboardingView(viewModel: OnboardingViewModel(delegate: self.viewModel, service: OnboardingServiceImplementation()))
         case .authorized:
-            AuthorizedView()
+            AuthorizedView(viewModel: AuthViewModel())
         case .signup:
-            SignupView()
+            SignupView(viewModel: SignupViewModel(onboardResetDelegate: OnboardingViewModel(delegate: self.viewModel, service: OnboardingServiceImplementation()), loginFlowResetDelegate: self.viewModel))
         }
     }
 }
 
-struct StartupView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartupView(viewModel: StartupViewModel())
-    }
-}

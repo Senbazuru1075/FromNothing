@@ -8,20 +8,23 @@
 import Foundation
 
 class StartupViewModel: ObservableObject {
+    
     @Published var state: StartupState = .onboarding
-    @Published var viewModel: OnboardingItemViewModel = OnboardingItemViewModel(item: nil)
+    
+  
     enum StartupState {
         case onboarding
         case signup
         case authorized
     }
+    
 }
 
-extension StartupViewModel: OnboardingDelegate {
+extension StartupViewModel: OnboardingDelegate, StartupResetDelegate {
     func onOnboardingComplete() {
         state = .signup
     }
-    func onOnboardingItemPressed() {
-        
+    func resetLoginFlow() {
+        state = .onboarding
     }
 }

@@ -11,9 +11,11 @@ import AVKit
 struct VideoView: View {
     @Environment(\.presentationMode) var presentationMode
     
+    var url: URL
     var player: AVPlayer
-    init(player: AVPlayer) {
-        self.player = player
+    init(url: URL) {
+        self.url = url
+        self.player = AVPlayer(url: self.url)
     }
     var body: some View {
         VideoPlayer(player: player) {

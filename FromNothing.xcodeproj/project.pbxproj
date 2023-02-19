@@ -10,6 +10,7 @@
 		D02316E329A03F82003066DD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E229A03F82003066DD /* SignupView.swift */; };
 		D02316E929A03F8F003066DD /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E529A03F8F003066DD /* StartupView.swift */; };
 		D02316EB29A03F8F003066DD /* StartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E829A03F8F003066DD /* StartupViewModel.swift */; };
+		D027C9D629A2D34100061842 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027C9D529A2D34100061842 /* AuthViewModel.swift */; };
 		D02F1F4329A07558006EEB36 /* StartupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02316E729A03F8F003066DD /* StartupViewModelTests.swift */; };
 		D071A035299DB0FF006C8471 /* FromNothingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A034299DB0FF006C8471 /* FromNothingApp.swift */; };
 		D071A037299DB0FF006C8471 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A036299DB0FF006C8471 /* ContentView.swift */; };
@@ -40,7 +41,6 @@
 		D071A09D299DB1BB006C8471 /* AVPlayer+Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A07B299DB1BB006C8471 /* AVPlayer+Thumbnail.swift */; };
 		D071A09E299DB1BB006C8471 /* BrainCloudNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A07D299DB1BB006C8471 /* BrainCloudNetworking.swift */; };
 		D071A09F299DB1BB006C8471 /* Document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D071A07F299DB1BB006C8471 /* Document.pdf */; };
-		D071A0A0299DB1BB006C8471 /* Video.mov in Resources */ = {isa = PBXBuildFile; fileRef = D071A080299DB1BB006C8471 /* Video.mov */; };
 		D071A0A1299DB1BB006C8471 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A081299DB1BB006C8471 /* VideoView.swift */; };
 		D071A0A3299DB1BB006C8471 /* RestrictedCharacterCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A084299DB1BB006C8471 /* RestrictedCharacterCount.swift */; };
 		D071A0A4299DB1BB006C8471 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A086299DB1BB006C8471 /* LocalNotificationManager.swift */; };
@@ -63,7 +63,11 @@
 		D071A0DB299DB579006C8471 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = D071A0DA299DB579006C8471 /* FirebaseMLModelDownloader */; };
 		D071A0DD299DB579006C8471 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D071A0DC299DB579006C8471 /* FirebaseStorage */; };
 		D071A0DF299DCFAE006C8471 /* PDFDocumentViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A0DE299DCFAE006C8471 /* PDFDocumentViewer.swift */; };
-		D071A0E1299DD195006C8471 /* OnboardingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071A0E0299DD195006C8471 /* OnboardingErrors.swift */; };
+		D07982A129A15A8500649021 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07982A029A15A8500649021 /* SignupViewModel.swift */; };
+		D07982A429A16CB200649021 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07982A329A16CB200649021 /* FileManagerService.swift */; };
+		D07982A629A1B30300649021 /* Task+Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07982A529A1B30300649021 /* Task+Sleep.swift */; };
+		D0D2A27329A2AA1600BA4F43 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D0D2A27229A2AA1600BA4F43 /* YouTubeiOSPlayerHelper */; };
+		D0D2A27529A2ADB800BA4F43 /* YoutubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A27429A2ADB800BA4F43 /* YoutubeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,7 @@
 		D02316E529A03F8F003066DD /* StartupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
 		D02316E729A03F8F003066DD /* StartupViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupViewModelTests.swift; sourceTree = "<group>"; };
 		D02316E829A03F8F003066DD /* StartupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupViewModel.swift; sourceTree = "<group>"; };
+		D027C9D529A2D34100061842 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D071A031299DB0FF006C8471 /* FromNothing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FromNothing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D071A034299DB0FF006C8471 /* FromNothingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromNothingApp.swift; sourceTree = "<group>"; };
 		D071A036299DB0FF006C8471 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,7 +126,6 @@
 		D071A07B299DB1BB006C8471 /* AVPlayer+Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Thumbnail.swift"; sourceTree = "<group>"; };
 		D071A07D299DB1BB006C8471 /* BrainCloudNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainCloudNetworking.swift; sourceTree = "<group>"; };
 		D071A07F299DB1BB006C8471 /* Document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Document.pdf; sourceTree = "<group>"; };
-		D071A080299DB1BB006C8471 /* Video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Video.mov; sourceTree = "<group>"; };
 		D071A081299DB1BB006C8471 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		D071A084299DB1BB006C8471 /* RestrictedCharacterCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestrictedCharacterCount.swift; sourceTree = "<group>"; };
 		D071A086299DB1BB006C8471 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
@@ -138,7 +142,10 @@
 		D071A0C9299DB20E006C8471 /* AuthorizedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedView.swift; sourceTree = "<group>"; };
 		D071A0CB299DB220006C8471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../DealHelper/Assets.xcassets; sourceTree = "<group>"; };
 		D071A0DE299DCFAE006C8471 /* PDFDocumentViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocumentViewer.swift; sourceTree = "<group>"; };
-		D071A0E0299DD195006C8471 /* OnboardingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingErrors.swift; sourceTree = "<group>"; };
+		D07982A029A15A8500649021 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		D07982A329A16CB200649021 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
+		D07982A529A1B30300649021 /* Task+Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Sleep.swift"; sourceTree = "<group>"; };
+		D0D2A27429A2ADB800BA4F43 /* YoutubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D071A0D7299DB579006C8471 /* FirebaseCrashlytics in Frameworks */,
+				D0D2A27329A2AA1600BA4F43 /* YouTubeiOSPlayerHelper in Frameworks */,
 				D071A0D9299DB579006C8471 /* FirebaseFirestore in Frameworks */,
 				D071A0DB299DB579006C8471 /* FirebaseMLModelDownloader in Frameworks */,
 				D071A0D3299DB579006C8471 /* FirebaseAnalytics in Frameworks */,
@@ -176,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D02316E229A03F82003066DD /* SignupView.swift */,
+				D07982A029A15A8500649021 /* SignupViewModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -196,6 +205,40 @@
 				D02316E729A03F8F003066DD /* StartupViewModelTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		D027C9D729A2E46900061842 /* OnboardingServices */ = {
+			isa = PBXGroup;
+			children = (
+				D071A0B3299DB1F5006C8471 /* OnboardingService.swift */,
+			);
+			path = OnboardingServices;
+			sourceTree = "<group>";
+		};
+		D027C9D829A2E47700061842 /* OnboardingViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D071A0BE299DB1F5006C8471 /* OnboardingViewModel.swift */,
+				D071A0B4299DB1F5006C8471 /* OnboardingItemViewModel.swift */,
+			);
+			path = OnboardingViewModels;
+			sourceTree = "<group>";
+		};
+		D027C9D929A2E4B900061842 /* Onboarding Models */ = {
+			isa = PBXGroup;
+			children = (
+				D071A0B9299DB1F5006C8471 /* OnboardingItem.swift */,
+			);
+			path = "Onboarding Models";
+			sourceTree = "<group>";
+		};
+		D027C9DA29A2E4D200061842 /* Onboarding Views */ = {
+			isa = PBXGroup;
+			children = (
+				D071A0BD299DB1F5006C8471 /* OnboardingView.swift */,
+				D071A0BA299DB1F5006C8471 /* OnboardingItemView.swift */,
+			);
+			path = "Onboarding Views";
 			sourceTree = "<group>";
 		};
 		D071A028299DB0FF006C8471 = {
@@ -227,8 +270,8 @@
 				D071A0CB299DB220006C8471 /* Assets.xcassets */,
 				D071A03A299DB101006C8471 /* FromNothing.entitlements */,
 				D071A0C8299DB20E006C8471 /* Authorized */,
-				D071A0B2299DB1F5006C8471 /* Onboarding */,
 				D02316E129A03F82003066DD /* Signup */,
+				D071A0B2299DB1F5006C8471 /* Onboarding */,
 				D02316E429A03F8F003066DD /* Startup */,
 				D071A05F299DB1BB006C8471 /* Utility */,
 				D071A03B299DB101006C8471 /* Preview Content */,
@@ -263,6 +306,7 @@
 		D071A05F299DB1BB006C8471 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D07982A229A16C9D00649021 /* Services */,
 				D071A060299DB1BB006C8471 /* Reusable Neuromorphic Elements */,
 				D071A06C299DB1BB006C8471 /* Helper Views */,
 				D071A079299DB1BB006C8471 /* Extensions */,
@@ -329,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				D071A07B299DB1BB006C8471 /* AVPlayer+Thumbnail.swift */,
+				D07982A529A1B30300649021 /* Task+Sleep.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,9 +390,9 @@
 			isa = PBXGroup;
 			children = (
 				D071A07F299DB1BB006C8471 /* Document.pdf */,
-				D071A080299DB1BB006C8471 /* Video.mov */,
 				D071A081299DB1BB006C8471 /* VideoView.swift */,
 				D071A0DE299DCFAE006C8471 /* PDFDocumentViewer.swift */,
+				D0D2A27429A2ADB800BA4F43 /* YoutubeService.swift */,
 			);
 			path = "Media Helpers";
 			sourceTree = "<group>";
@@ -371,50 +416,56 @@
 		D071A0B2299DB1F5006C8471 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				D071A0BB299DB1F5006C8471 /* Data */,
-				D071A0B7299DB1F5006C8471 /* Testing */,
-				D071A0B5299DB1F5006C8471 /* Tests */,
-				D071A0B3299DB1F5006C8471 /* OnboardingService.swift */,
-				D071A0B6299DB1F5006C8471 /* OnboardingViewModelTests.swift */,
-				D071A0B4299DB1F5006C8471 /* OnboardingItemViewModel.swift */,
-				D071A0B9299DB1F5006C8471 /* OnboardingItem.swift */,
-				D071A0BA299DB1F5006C8471 /* OnboardingItemView.swift */,
-				D071A0BD299DB1F5006C8471 /* OnboardingView.swift */,
-				D071A0BE299DB1F5006C8471 /* OnboardingViewModel.swift */,
+				D071A0BB299DB1F5006C8471 /* Onboarding Data */,
+				D071A0B7299DB1F5006C8471 /* Testing Onboarding */,
+				D071A0B5299DB1F5006C8471 /* Onboarding Tests */,
+				D027C9D729A2E46900061842 /* OnboardingServices */,
+				D027C9D829A2E47700061842 /* OnboardingViewModels */,
+				D027C9D929A2E4B900061842 /* Onboarding Models */,
+				D027C9DA29A2E4D200061842 /* Onboarding Views */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		D071A0B5299DB1F5006C8471 /* Tests */ = {
+		D071A0B5299DB1F5006C8471 /* Onboarding Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D071A0B6299DB1F5006C8471 /* OnboardingViewModelTests.swift */,
 			);
-			path = Tests;
+			path = "Onboarding Tests";
 			sourceTree = "<group>";
 		};
-		D071A0B7299DB1F5006C8471 /* Testing */ = {
+		D071A0B7299DB1F5006C8471 /* Testing Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				D071A0B8299DB1F5006C8471 /* OnboardingDelegateFake.swift */,
 			);
-			path = Testing;
+			path = "Testing Onboarding";
 			sourceTree = "<group>";
 		};
-		D071A0BB299DB1F5006C8471 /* Data */ = {
+		D071A0BB299DB1F5006C8471 /* Onboarding Data */ = {
 			isa = PBXGroup;
 			children = (
 				D071A0BC299DB1F5006C8471 /* onboardingdata.json */,
-				D071A0E0299DD195006C8471 /* OnboardingErrors.swift */,
 			);
-			path = Data;
+			path = "Onboarding Data";
 			sourceTree = "<group>";
 		};
 		D071A0C8299DB20E006C8471 /* Authorized */ = {
 			isa = PBXGroup;
 			children = (
 				D071A0C9299DB20E006C8471 /* AuthorizedView.swift */,
+				D027C9D529A2D34100061842 /* AuthViewModel.swift */,
 			);
 			path = Authorized;
+			sourceTree = "<group>";
+		};
+		D07982A229A16C9D00649021 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D07982A329A16CB200649021 /* FileManagerService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +491,7 @@
 				D071A0D8299DB579006C8471 /* FirebaseFirestore */,
 				D071A0DA299DB579006C8471 /* FirebaseMLModelDownloader */,
 				D071A0DC299DB579006C8471 /* FirebaseStorage */,
+				D0D2A27229A2AA1600BA4F43 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = FromNothing;
 			productReference = D071A031299DB0FF006C8471 /* FromNothing.app */;
@@ -515,6 +567,7 @@
 			mainGroup = D071A028299DB0FF006C8471;
 			packageReferences = (
 				D071A0D1299DB579006C8471 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D0D2A27129A2AA1600BA4F43 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = D071A032299DB0FF006C8471 /* Products */;
 			projectDirPath = "";
@@ -533,7 +586,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D071A0C5299DB1F5006C8471 /* onboardingdata.json in Resources */,
-				D071A0A0299DB1BB006C8471 /* Video.mov in Resources */,
 				D071A03D299DB101006C8471 /* Preview Assets.xcassets in Resources */,
 				D071A0B1299DB1EB006C8471 /* GoogleService-Info.plist in Resources */,
 				D071A0CC299DB220006C8471 /* Assets.xcassets in Resources */,
@@ -564,9 +616,9 @@
 			files = (
 				D02316E329A03F82003066DD /* SignupView.swift in Sources */,
 				D071A095299DB1BB006C8471 /* NeuromorphicBoxModifier.swift in Sources */,
-				D071A0E1299DD195006C8471 /* OnboardingErrors.swift in Sources */,
 				D02316EB29A03F8F003066DD /* StartupViewModel.swift in Sources */,
 				D071A092299DB1BB006C8471 /* ButtonModifiers.swift in Sources */,
+				D07982A129A15A8500649021 /* SignupViewModel.swift in Sources */,
 				D071A037299DB0FF006C8471 /* ContentView.swift in Sources */,
 				D071A08E299DB1BB006C8471 /* ReusableNeuroMorphicProfileButton.swift in Sources */,
 				D071A091299DB1BB006C8471 /* ReusableSemiCircleCutoutHeader.swift in Sources */,
@@ -578,12 +630,14 @@
 				D071A0DF299DCFAE006C8471 /* PDFDocumentViewer.swift in Sources */,
 				D071A09B299DB1BB006C8471 /* DefaultTextFieldModifier.swift in Sources */,
 				D071A090299DB1BB006C8471 /* CustomNeuroMorphicNavBar.swift in Sources */,
+				D0D2A27529A2ADB800BA4F43 /* YoutubeService.swift in Sources */,
 				D071A0A4299DB1BB006C8471 /* LocalNotificationManager.swift in Sources */,
 				D02316E929A03F8F003066DD /* StartupView.swift in Sources */,
 				D071A098299DB1BB006C8471 /* NeuromorphicCircularButtonStyle.swift in Sources */,
 				D071A08F299DB1BB006C8471 /* ReusableStatsView.swift in Sources */,
 				D071A0C7299DB1F5006C8471 /* OnboardingViewModel.swift in Sources */,
 				D071A0CA299DB20E006C8471 /* AuthorizedView.swift in Sources */,
+				D07982A429A16CB200649021 /* FileManagerService.swift in Sources */,
 				D071A094299DB1BB006C8471 /* NeuromorphicTextFieldModifier.swift in Sources */,
 				D071A0A1299DB1BB006C8471 /* VideoView.swift in Sources */,
 				D071A08D299DB1BB006C8471 /* ReusableProfileBoxElement.swift in Sources */,
@@ -592,7 +646,9 @@
 				D071A08A299DB1BB006C8471 /* CustomNavigationContainer.swift in Sources */,
 				D071A0C3299DB1F5006C8471 /* OnboardingItem.swift in Sources */,
 				D071A099299DB1BB006C8471 /* NeuroMorphicCircularModifier.swift in Sources */,
+				D07982A629A1B30300649021 /* Task+Sleep.swift in Sources */,
 				D071A0A3299DB1BB006C8471 /* RestrictedCharacterCount.swift in Sources */,
+				D027C9D629A2D34100061842 /* AuthViewModel.swift in Sources */,
 				D071A087299DB1BB006C8471 /* CustomNeuromorphicToolbar.swift in Sources */,
 				D071A0C4299DB1F5006C8471 /* OnboardingItemView.swift in Sources */,
 				D071A0BF299DB1F5006C8471 /* OnboardingService.swift in Sources */,
@@ -758,6 +814,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FromNothing/Preview Content\"";
+				DEVELOPMENT_TEAM = 74XT6X8UK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -794,6 +851,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FromNothing/Preview Content\"";
+				DEVELOPMENT_TEAM = 74XT6X8UK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -957,6 +1015,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		D0D2A27129A2AA1600BA4F43 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -989,6 +1055,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D071A0D1299DB579006C8471 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		D0D2A27229A2AA1600BA4F43 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0D2A27129A2AA1600BA4F43 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
