@@ -11,13 +11,15 @@ import GoogleSignIn
 import GoogleSignInSwift
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    @ObservedObject var viewModel: StartupViewModel = StartupViewModel()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
+        
         GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
             if error != nil || user == nil {
-              // Show the app's signed-out state.
+                self.viewModel.state = .onboarding
             } else {
-              // Show the app's signed-in state.
+                self.viewModel.state = .authorized
             }
           }
         return true
@@ -43,7 +45,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct FromNothingApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var viewModel: StartupViewModel = StartupViewModel()
-    
+    @State var error: Error? = nil
     var body: some Scene {
         WindowGroup {
             StartupView(viewModel: viewModel)
@@ -52,7 +54,17 @@ struct FromNothingApp: App {
                     }
                 .onAppear {
                     GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-                        // Check if `user` exists; otherwise, do something with `error`
+                        guard error == nil else {
+                            print(String(describing: error!))
+                            self.error = error
+                            return
+                        }
+                        guard user?.userID != nil && user?.profile != nil else {
+                            print(String(describing: error!))
+                            self.error = error
+                            return
+                        }
+                        self.viewModel.state = .onboarding
                 }
             }
         }

@@ -31,7 +31,7 @@ struct StartupView: View {
             AuthorizedView(viewModel: AuthViewModel())
         //signup view
         case .signup:
-            SignupView(viewModel: SignupViewModel(onboardResetDelegate: OnboardingViewModel(delegate: self.viewModel, service: OnboardingServiceImplementation()), loginFlowResetDelegate: self.viewModel))
+            SignupView(viewModel: SignupViewModel(service: AuthServiceImplementation(), onboardResetDelegate: OnboardingViewModel(delegate: self.viewModel, service: OnboardingServiceImplementation()), loginFlowResetDelegate: self.viewModel))
         }
     }
 }

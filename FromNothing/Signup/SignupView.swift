@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import GoogleSignIn
+import GoogleSignInSwift
 
 struct SignupView: View {
     @ObservedObject var viewModel: SignupViewModel
@@ -41,7 +43,11 @@ struct SignupView: View {
                 .frame(width: 325, height: 70, alignment: .center)
                 .buttonStyle(NeuroMorphicButtonStyle(isDarkMode: isDarkMode))
                 Spacer()
-                
+                GoogleSignInButton {
+                    Task {
+                        try await self.viewModel.handleSignIn()
+                    }
+                }
                 
                 Spacer()
             }
@@ -51,6 +57,6 @@ struct SignupView: View {
 
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
-        SignupView(viewModel: SignupViewModel())
+        SignupView(viewModel: SignupViewModel(service: AuthServiceImplementation()))
     }
 }

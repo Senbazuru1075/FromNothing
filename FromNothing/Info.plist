@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Info.plist
+   FromNothing
+
+   Created by Remmington Damper on 2/20/23.
+   Copyright (c) 2023 ___ORGANIZATIONNAME___. All rights reserved.
+-->
 <plist version="1.0">
-<dict>
+    <dict>
     <key>GIDClientID</key>
     <string>52193990836-2uvrf9ill8qn75o42tpmqhvnlrv085uj.apps.googleusercontent.com</string>
-    <key>GOOGLEServer_SECRET</key>
-    <string>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</string>
-    <key>GIDServerClientID</key>
-    <string>52193990836-u9gjsn8q09nd1qf3ck65ub4o81m7ntfl.apps.googleusercontent.com</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.52193990836-2uvrf9ill8qn75o42tpmqhvnlrv085uj</string>
-			</array>
-		</dict>
-	</array>
-</dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.googleusercontent.apps.52193990836-2uvrf9ill8qn75o42tpmqhvnlrv085uj</string>
+        </array>
+      </dict>
+    </array>
+    </dict>
 </plist>
