@@ -33,7 +33,7 @@ struct OnboardingItemView: View {
             //MARK: Start of video VStack
             VStack {
                 if let video = self.viewModel.item.video {
-                    MoviePlayer(videoID: video)
+                    YoutubeMoviePlayer(videoID: video)
                 }
                 CustomizedButton {
                     DispatchQueue.main.async {

@@ -18,19 +18,31 @@ struct SignupView: View {
                 Image(systemName: "banknote.fill")
                     .resizable()
                     .foregroundColor(Color("moneycolor"))
-                    .scaledToFill()
+                    
+                    .scaledToFit()
                     .padding()
                     .padding()
-                    .frame(width: 125, height: 125, alignment: .top)
+                    .frame(width: 200, height: 200, alignment: .center)
                     .withNeuromorphicCircularModifier(isDarkMode: isDarkMode)
-                Spacer()
+                    .padding(.top)
+                    .padding(.bottom)
                 
                 Button {
-                    self.viewModel.resetOnboarding()
+                self.viewModel.resetOnboarding()
                 } label: {
                     Text("Reset Onboarding")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding()
+                        .padding(.horizontal)
+                        .padding(.horizontal)
+                        
                 }
-                .withDefaultButtonModifier()
+                .frame(width: 325, height: 70, alignment: .center)
+                .buttonStyle(NeuroMorphicButtonStyle(isDarkMode: isDarkMode))
+                Spacer()
+                
+                
                 Spacer()
             }
         }

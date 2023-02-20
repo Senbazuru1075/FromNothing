@@ -9,7 +9,7 @@ import Foundation
 import YouTubeiOSPlayerHelper
 import SwiftUI
 
-struct MoviePlayer: UIViewRepresentable {
+struct YoutubeMoviePlayer: UIViewRepresentable {
     let videoID: String?
     let playListID: String?
     let player: YTPlayerView = YTPlayerView()

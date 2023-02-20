@@ -86,7 +86,7 @@ class OnboardingServiceImplementation: OnboardingService {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                var jsonData = try decoder.decode(OnboardingItemResponse.self, from: data)
+                let jsonData = try decoder.decode(OnboardingItemResponse.self, from: data)
                 return jsonData
             } catch let error {
                 throw error
