@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
 
 protocol StartupResetDelegate: AnyObject {
     func resetLoginFlow()
@@ -13,11 +15,14 @@ protocol StartupResetDelegate: AnyObject {
 protocol OnboardingResetDelegate: AnyObject {
     func resetOnboarding()
 }
-
+protocol SignupCompleteDelegate: AnyObject {
+    func onCompleteSignup()
+}
 class SignupViewModel: ObservableObject {
     @Published var person: Person?
     private weak var onboardResetDelegate: OnboardingResetDelegate?
     private weak var loginFlowResetDelegate: StartupResetDelegate?
+    private weak var signupCompleteDelegate: SignupCompleteDelegate?
     var service: AuthService
     init(service: AuthService, person: Person? = nil, onboardResetDelegate: OnboardingResetDelegate? = nil, loginFlowResetDelegate: StartupResetDelegate? = nil) {
         self.service = service
@@ -46,6 +51,13 @@ class SignupViewModel: ObservableObject {
         } catch let error {
             print(String(describing: error))
             throw error
+        }
+    }
+    func goToHome() {
+        if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first {
+            window.rootViewController = UIHostingController(rootView: AuthorizedView(viewModel: AuthViewModel()))
+            window.makeKeyAndVisible()
+            self.signupCompleteDelegate?.onCompleteSignup()
         }
     }
 }

@@ -23,8 +23,6 @@ protocol AuthService {
 class AuthServiceImplementation: AuthService {
     var error: Error?
     
-    private var viewController: UIViewController = .init()
-    
     func signout() throws {
         do {
             GIDSignIn.sharedInstance.signOut()
@@ -64,14 +62,17 @@ class AuthServiceImplementation: AuthService {
                     }
                 }
             } else {
-                viewController.presentInKeyWindow()
+                guard let presentingViewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {
+                    print("no root")
+                    return nil
+                }
                 guard let clientID = FirebaseApp.app()?.options.clientID else {
                     print("could get clientID correctly")
                     return nil
                 }
                 let config = GIDConfiguration(clientID: clientID)
                 
-                let authResult = try await GIDSignIn.sharedInstance.signIn(withPresenting: viewController)
+                let authResult = try await GIDSignIn.sharedInstance.signIn(withPresenting: presentingViewController)
                 let refreshed = try await authResult.user.refreshTokensIfNeeded()
                 if let idToken = refreshed.idToken?.tokenString {
                 let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: refreshed.accessToken.tokenString)

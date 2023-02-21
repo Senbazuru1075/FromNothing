@@ -25,7 +25,7 @@ class StartupViewModel: ObservableObject {
 }
 
 //MARK: Extensions
-extension StartupViewModel: OnboardingDelegate, StartupResetDelegate {
+extension StartupViewModel: OnboardingDelegate, StartupResetDelegate, SignupCompleteDelegate {
     ///This function ends onboarding
     func onOnboardingComplete() {
         state = .signup
@@ -33,5 +33,8 @@ extension StartupViewModel: OnboardingDelegate, StartupResetDelegate {
     ///This functino resets the login flow
     func resetLoginFlow() {
         state = .onboarding
+    }
+    func onCompleteSignup() {
+        state = .authorized
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseCore
 import GoogleSignIn
 import GoogleSignInSwift
+import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     @ObservedObject var viewModel: StartupViewModel = StartupViewModel()
