@@ -32,14 +32,14 @@ struct OnboardingView: View {
     var body: some View {
         ZStack {
             //Neuromorphic background
-            Color("mainbackgroundcolor")
-                .ignoresSafeArea()
+         
             ForEach(Array(zip(viewModel.items.indices, viewModel.items)), id: \.0) {
                 (index, item) in
                 ZStack {
                    
                     if viewModel.counter == index {
                         OnboardingItemView(viewModel: OnboardingItemViewModel(delegate: viewModel, item: viewModel.items[index]))
+                            
                     }
                 }
             }

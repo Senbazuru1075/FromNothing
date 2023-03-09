@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
+//TODO: - fix the signup blank screen after using GIDSignIn and non-page switch.
 protocol StartupResetDelegate: AnyObject {
     func resetLoginFlow()
 }
@@ -20,6 +23,7 @@ protocol SignupCompleteDelegate: AnyObject {
 }
 class SignupViewModel: ObservableObject {
     @Published var person: Person?
+    
     private weak var onboardResetDelegate: OnboardingResetDelegate?
     private weak var loginFlowResetDelegate: StartupResetDelegate?
     private weak var signupCompleteDelegate: SignupCompleteDelegate?
@@ -35,16 +39,7 @@ class SignupViewModel: ObservableObject {
         self.onboardResetDelegate?.resetOnboarding()
         self.loginFlowResetDelegate?.resetLoginFlow()
     }
-    @MainActor func handleSignIn() async throws {
-        do {
-            let response = try await service.handleSignInButton()
-            guard let personResponse = response else { return }
-            self.person = personResponse
-        } catch let error {
-            print(String(describing: error))
-            throw error
-        }
-    }
+    
     @MainActor func handleSignOut() async throws {
         do {
             try service.signout()
@@ -53,11 +48,40 @@ class SignupViewModel: ObservableObject {
             throw error
         }
     }
-    func goToHome() {
-        if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first {
-            window.rootViewController = UIHostingController(rootView: AuthorizedView(viewModel: AuthViewModel()))
-            window.makeKeyAndVisible()
-            self.signupCompleteDelegate?.onCompleteSignup()
-        }
+   func completeAndFinishSignup() {
+        self.signupCompleteDelegate?.onCompleteSignup()
     }
 }
+
+
+
+
+
+//MARK: - Functions for Google Sign in with Firebase
+//
+//@MainActor func handleSignIn() async throws {
+//    do {
+//        let response = try await service.handleSignInButton()
+//        guard let personResponse = response else { return }
+//        self.person = personResponse
+//        if Auth.auth().currentUser != nil {
+//            self.completeAndFinishSignup()
+//        }
+//    } catch let error {
+//        print(String(describing: error))
+//        throw error
+//    }
+//}
+//
+//@MainActor func restoreSignIn() async throws {
+//    do {
+//        self.person = try await service.restoreSignIn()
+//        if Auth.auth().currentUser != nil {
+//            self.completeAndFinishSignup()
+//        }
+//    } catch let error {
+//        print(String(describing: error))
+//        throw error
+//    }
+//}
+

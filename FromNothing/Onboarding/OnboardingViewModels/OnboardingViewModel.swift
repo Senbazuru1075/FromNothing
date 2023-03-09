@@ -41,7 +41,6 @@ class OnboardingViewModel: ObservableObject {
     init(delegate: OnboardingDelegate? = nil, service: OnboardingService) {
         self.delegate = delegate
         self.service = service
-        Auth.auth().signInAnonymously()
     }
     
     //TODO: - Add check for network connectivity to do offline and online viewing

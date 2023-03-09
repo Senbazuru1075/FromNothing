@@ -15,6 +15,7 @@ class StartupViewModel: ObservableObject {
     ///This property manages the state of the app entry flow
     @Published var state: StartupState = .onboarding
     
+    //MARK: Enums
     ///This enum is the startup state holder. It holds the beginning. Signup process. and app entry
     enum StartupState {
         case onboarding

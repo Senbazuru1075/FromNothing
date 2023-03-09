@@ -11,6 +11,11 @@ import GoogleSignInSwift
 
 struct SignupView: View {
     @ObservedObject var viewModel: SignupViewModel
+    @State var error: Error? = nil
+    
+    init(viewModel: SignupViewModel) {
+        self.viewModel = viewModel
+    }
     @Environment(\.colorScheme) var isDarkMode
     var body: some View {
         ZStack {
@@ -42,12 +47,9 @@ struct SignupView: View {
                 }
                 .frame(width: 325, height: 70, alignment: .center)
                 .buttonStyle(NeuroMorphicButtonStyle(isDarkMode: isDarkMode))
-                Spacer()
-                GoogleSignInButton {
-                    Task {
-                        try await self.viewModel.handleSignIn()
-                    }
-                }
+                .padding(.bottom)
+              
+                
                 
                 Spacer()
             }

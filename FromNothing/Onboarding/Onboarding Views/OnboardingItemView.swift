@@ -20,7 +20,7 @@ struct OnboardingItemView: View {
     
     //MARK: Properties
     var offset = CGSize(width: 1325, height: 0)
-    
+ 
     //MARK: Initializers
     init(viewModel: OnboardingItemViewModel) {
         self.viewModel = viewModel
@@ -29,31 +29,36 @@ struct OnboardingItemView: View {
     //MARK: Start of body
     var body: some View {
         
-        if self.viewModel.item.video != nil {
-            //MARK: Start of video VStack
-            VStack {
-                if let video = self.viewModel.item.video {
-                    YoutubeMoviePlayer(videoID: video)
-                }
-                CustomizedButton {
-                    DispatchQueue.main.async {
-                        withAnimation(.easeInOut(duration: 1.4).delay(0.18)) {
-                            viewModel.didPressAndStack.toggle()
-                            self.viewModel.verifyAndCount()
-                        }
-                    }
-                } content: {
-                    Text("Yes, I have read and understood Clear Acquire's instructions")
-                }
-            }
-            .padding()
-            .withNeuromorphicBoxModifier(isDarkMode: colorScheme)
-            .frame(width: 316, height: 499, alignment: .center)
-            .offset(x: viewModel.didPressAndStack ? offset.width : 0, y: offset.height * 0.4)
-            .rotationEffect(Angle(degrees: viewModel.didPressAndStack ? Double(offset.width / 15) : Double(0)))
-            .scaleEffect(viewModel.didPressAndStack ? 0.25 : 1.0)
-            .opacity(viewModel.didPressAndStack ? 0 : 1)
-        } else {
+        //TODO: - Move the Onboarding Video Inside of the first screen of the app
+//        if self.viewModel.item.video != nil {
+//            //MARK: Start of video VStack
+//            VStack {
+//                if let video = self.viewModel.item.video {
+//                    let _ = Task {
+//                        await MainActor.run {
+//                            YoutubeMoviePlayer(videoID: video)
+//                        }
+//                    }
+//                }
+//                CustomizedButton {
+//                    DispatchQueue.main.async {
+//                        withAnimation(.easeInOut(duration: 1.4).delay(0.18)) {
+//                            viewModel.didPressAndStack.toggle()
+//                            self.viewModel.verifyAndCount()
+//                        }
+//                    }
+//                } content: {
+//                    Text("Yes, I have read and understood Clear Acquire's instructions")
+//                }
+//            }
+//            .padding()
+//            .withNeuromorphicBoxModifier(isDarkMode: colorScheme)
+//            .frame(width: 316, height: 499, alignment: .center)
+//            .offset(x: viewModel.didPressAndStack ? offset.width : 0, y: offset.height * 0.4)
+//            .rotationEffect(Angle(degrees: viewModel.didPressAndStack ? Double(offset.width / 15) : Double(0)))
+//            .scaleEffect(viewModel.didPressAndStack ? 0.25 : 1.0)
+//            .opacity(viewModel.didPressAndStack ? 0 : 1)
+//        } else {
             //MARK: Start of Regular Onboarding card
             VStack(alignment: .leading, spacing: 20) {
                 Text(viewModel.item.title ?? "")
@@ -103,7 +108,7 @@ struct OnboardingItemView: View {
             .rotationEffect(Angle(degrees: viewModel.didPressAndStack ? Double(offset.width / 15) : Double(0)))
             .scaleEffect(viewModel.didPressAndStack ? 0.25 : 1.0)
             .opacity(viewModel.didPressAndStack ? 0 : 1)
-        }
+        
     }
 }
 
