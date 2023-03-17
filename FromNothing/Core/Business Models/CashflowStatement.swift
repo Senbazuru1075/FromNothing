@@ -6,22 +6,21 @@
 //
 
 import Foundation
-import RealmSwift
 
 final class CashflowStatement {
     // Operating activities
-    @Persisted var netIncome: Double?
-    @Persisted var depreciation: Double?
-    @Persisted var changesInWorkingCapital: Double?
+    var netIncome: Double?
+    var depreciation: Double?
+    var changesInWorkingCapital: Double?
     
     // Investing activities
-    @Persisted var capitalExpenditures: Double?
-    @Persisted var investments: Double?
+    var capitalExpenditures: Double?
+    var investments: Double?
     
     // Financing activities
-    @Persisted var dividends: Double?
-    @Persisted var debtRepaid: Double?
-    @Persisted var equityIssued: Double?
+    var dividends: Double?
+    var debtRepaid: Double?
+    var equityIssued: Double?
     
     // Cash flow totals
     var operatingCashFlow: Double? {

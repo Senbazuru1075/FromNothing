@@ -69,8 +69,17 @@
 		D0C2D49F29A4035300741E1E /* UIApplication+UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2D49E29A4035300741E1E /* UIApplication+UIWindow.swift */; };
 		D0D2A27529A2ADB800BA4F43 /* YoutubeMoviePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A27429A2ADB800BA4F43 /* YoutubeMoviePlayer.swift */; };
 		D0ED1ACD29C3D1E3008F58A4 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D0ED1ACC29C3D1E3008F58A4 /* YouTubeiOSPlayerHelper */; };
-		D0ED1AD329C3F1EC008F58A4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D0ED1AD229C3F1EC008F58A4 /* Realm */; };
-		D0ED1AD529C3F1EC008F58A4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D0ED1AD429C3F1EC008F58A4 /* RealmSwift */; };
+		D0ED1AD829C40A15008F58A4 /* IncomeStatementUsageClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AD729C40A15008F58A4 /* IncomeStatementUsageClasses.swift */; };
+		D0ED1ADA29C41EC7008F58A4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AD929C41EC7008F58A4 /* Currency.swift */; };
+		D0ED1ADC29C41F55008F58A4 /* AccountingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1ADB29C41F55008F58A4 /* AccountingMethod.swift */; };
+		D0ED1ADE29C41F9A008F58A4 /* Asset+LiabilityCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1ADD29C41F9A008F58A4 /* Asset+LiabilityCategories.swift */; };
+		D0ED1AE029C42037008F58A4 /* BusinessSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1ADF29C42037008F58A4 /* BusinessSegment.swift */; };
+		D0ED1AE229C420FD008F58A4 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AE129C420FD008F58A4 /* Forecast.swift */; };
+		D0ED1AE429C421C7008F58A4 /* BusinessSensitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AE329C421C7008F58A4 /* BusinessSensitivity.swift */; };
+		D0ED1AE629C42218008F58A4 /* HistoricalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AE529C42218008F58A4 /* HistoricalData.swift */; };
+		D0ED1AE829C422AA008F58A4 /* ValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AE729C422AA008F58A4 /* ValidationErrors.swift */; };
+		D0ED1AEA29C437E3008F58A4 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AE929C437E3008F58A4 /* Asset.swift */; };
+		D0ED1AEC29C43FC7008F58A4 /* MACRSTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AEB29C43FC7008F58A4 /* MACRSTable.swift */; };
 		D0FB887A29A879C000A63685 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D0FB887929A879C000A63685 /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +166,17 @@
 		D07982A529A1B30300649021 /* Task+Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Sleep.swift"; sourceTree = "<group>"; };
 		D0C2D49E29A4035300741E1E /* UIApplication+UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+UIWindow.swift"; sourceTree = "<group>"; };
 		D0D2A27429A2ADB800BA4F43 /* YoutubeMoviePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeMoviePlayer.swift; sourceTree = "<group>"; };
+		D0ED1AD729C40A15008F58A4 /* IncomeStatementUsageClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeStatementUsageClasses.swift; sourceTree = "<group>"; };
+		D0ED1AD929C41EC7008F58A4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		D0ED1ADB29C41F55008F58A4 /* AccountingMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingMethod.swift; sourceTree = "<group>"; };
+		D0ED1ADD29C41F9A008F58A4 /* Asset+LiabilityCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asset+LiabilityCategories.swift"; sourceTree = "<group>"; };
+		D0ED1ADF29C42037008F58A4 /* BusinessSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSegment.swift; sourceTree = "<group>"; };
+		D0ED1AE129C420FD008F58A4 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		D0ED1AE329C421C7008F58A4 /* BusinessSensitivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSensitivity.swift; sourceTree = "<group>"; };
+		D0ED1AE529C42218008F58A4 /* HistoricalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalData.swift; sourceTree = "<group>"; };
+		D0ED1AE729C422AA008F58A4 /* ValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrors.swift; sourceTree = "<group>"; };
+		D0ED1AE929C437E3008F58A4 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		D0ED1AEB29C43FC7008F58A4 /* MACRSTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MACRSTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +184,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0ED1AD529C3F1EC008F58A4 /* RealmSwift in Frameworks */,
-				D0ED1AD329C3F1EC008F58A4 /* Realm in Frameworks */,
 				D0FB887A29A879C000A63685 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,10 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				D03C15FD29BD8525009B6320 /* DealFormView.swift */,
-				D03C160D29BD957A009B6320 /* IncomeStatement.swift */,
-				D03C160729BD918E009B6320 /* Business.swift */,
-				D03C161F29BDAFDE009B6320 /* Liability.swift */,
-				D03C160929BD954B009B6320 /* BalanceSheet.swift */,
 			);
 			path = "Deal Forms";
 			sourceTree = "<group>";
@@ -289,6 +303,19 @@
 			children = (
 				D03C162129BDB698009B6320 /* Business Models */,
 				D03C161829BDA1D6009B6320 /* Asset Models */,
+				D0ED1AD929C41EC7008F58A4 /* Currency.swift */,
+				D0ED1AE729C422AA008F58A4 /* ValidationErrors.swift */,
+				D0ED1ADB29C41F55008F58A4 /* AccountingMethod.swift */,
+				D0ED1ADF29C42037008F58A4 /* BusinessSegment.swift */,
+				D03C160929BD954B009B6320 /* BalanceSheet.swift */,
+				D0ED1ADD29C41F9A008F58A4 /* Asset+LiabilityCategories.swift */,
+				D0ED1AE529C42218008F58A4 /* HistoricalData.swift */,
+				D0ED1AE329C421C7008F58A4 /* BusinessSensitivity.swift */,
+				D0ED1AEB29C43FC7008F58A4 /* MACRSTable.swift */,
+				D0ED1AE929C437E3008F58A4 /* Asset.swift */,
+				D0ED1AE129C420FD008F58A4 /* Forecast.swift */,
+				D03C161F29BDAFDE009B6320 /* Liability.swift */,
+				D03C160729BD918E009B6320 /* Business.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -303,6 +330,8 @@
 		D03C162129BDB698009B6320 /* Business Models */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED1AD729C40A15008F58A4 /* IncomeStatementUsageClasses.swift */,
+				D03C160D29BD957A009B6320 /* IncomeStatement.swift */,
 				D03C160B29BD9564009B6320 /* CashflowStatement.swift */,
 			);
 			path = "Business Models";
@@ -565,8 +594,6 @@
 			name = FromNothing;
 			packageProductDependencies = (
 				D0FB887929A879C000A63685 /* YouTubeiOSPlayerHelper */,
-				D0ED1AD229C3F1EC008F58A4 /* Realm */,
-				D0ED1AD429C3F1EC008F58A4 /* RealmSwift */,
 			);
 			productName = FromNothing;
 			productReference = D071A031299DB0FF006C8471 /* FromNothing.app */;
@@ -645,7 +672,6 @@
 			mainGroup = D071A028299DB0FF006C8471;
 			packageReferences = (
 				D0FB887829A879C000A63685 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
-				D0ED1AD129C3F1EC008F58A4 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = D071A032299DB0FF006C8471 /* Products */;
 			projectDirPath = "";
@@ -698,9 +724,12 @@
 				D071A08E299DB1BB006C8471 /* ReusableNeuroMorphicProfileButton.swift in Sources */,
 				D071A091299DB1BB006C8471 /* ReusableSemiCircleCutoutHeader.swift in Sources */,
 				D071A088299DB1BB006C8471 /* ReusableOverallRanking.swift in Sources */,
+				D0ED1AE629C42218008F58A4 /* HistoricalData.swift in Sources */,
+				D0ED1AEA29C437E3008F58A4 /* Asset.swift in Sources */,
 				D071A0C6299DB1F5006C8471 /* OnboardingView.swift in Sources */,
 				D071A09A299DB1BB006C8471 /* CustomizedTextField.swift in Sources */,
 				D03C160E29BD957A009B6320 /* IncomeStatement.swift in Sources */,
+				D0ED1AE229C420FD008F58A4 /* Forecast.swift in Sources */,
 				D03C160629BD8579009B6320 /* DealAnalysisView.swift in Sources */,
 				D071A089299DB1BB006C8471 /* CustomNeuromorphicCircularButton.swift in Sources */,
 				D071A035299DB0FF006C8471 /* FromNothingApp.swift in Sources */,
@@ -716,22 +745,29 @@
 				D03C160829BD918E009B6320 /* Business.swift in Sources */,
 				D071A0CA299DB20E006C8471 /* AuthorizedView.swift in Sources */,
 				D07982A429A16CB200649021 /* FileManagerService.swift in Sources */,
+				D0ED1AE029C42037008F58A4 /* BusinessSegment.swift in Sources */,
 				D071A094299DB1BB006C8471 /* NeuromorphicTextFieldModifier.swift in Sources */,
 				D03C160A29BD954B009B6320 /* BalanceSheet.swift in Sources */,
 				D071A0A1299DB1BB006C8471 /* VideoView.swift in Sources */,
 				D071A08D299DB1BB006C8471 /* ReusableProfileBoxElement.swift in Sources */,
+				D0ED1AE429C421C7008F58A4 /* BusinessSensitivity.swift in Sources */,
 				D03C160C29BD9564009B6320 /* CashflowStatement.swift in Sources */,
 				D071A09E299DB1BB006C8471 /* BrainCloudNetworking.swift in Sources */,
 				D071A096299DB1BB006C8471 /* NeuromorphicButtonStyle.swift in Sources */,
+				D0ED1AD829C40A15008F58A4 /* IncomeStatementUsageClasses.swift in Sources */,
+				D0ED1ADC29C41F55008F58A4 /* AccountingMethod.swift in Sources */,
 				D071A08A299DB1BB006C8471 /* CustomNavigationContainer.swift in Sources */,
 				D071A0C3299DB1F5006C8471 /* OnboardingItem.swift in Sources */,
 				D0C2D49F29A4035300741E1E /* UIApplication+UIWindow.swift in Sources */,
+				D0ED1ADA29C41EC7008F58A4 /* Currency.swift in Sources */,
 				D071A099299DB1BB006C8471 /* NeuroMorphicCircularModifier.swift in Sources */,
 				D07982A629A1B30300649021 /* Task+Sleep.swift in Sources */,
 				D071A0A3299DB1BB006C8471 /* RestrictedCharacterCount.swift in Sources */,
 				D03C15FE29BD8525009B6320 /* DealFormView.swift in Sources */,
+				D0ED1AE829C422AA008F58A4 /* ValidationErrors.swift in Sources */,
 				D027C9D629A2D34100061842 /* AuthViewModel.swift in Sources */,
 				D071A087299DB1BB006C8471 /* CustomNeuromorphicToolbar.swift in Sources */,
+				D0ED1ADE29C41F9A008F58A4 /* Asset+LiabilityCategories.swift in Sources */,
 				D071A0C4299DB1F5006C8471 /* OnboardingItemView.swift in Sources */,
 				D071A0BF299DB1F5006C8471 /* OnboardingService.swift in Sources */,
 				D03C160429BD8559009B6320 /* CalculatorsView.swift in Sources */,
@@ -740,6 +776,7 @@
 				D071A08B299DB1BB006C8471 /* ReusableNeuromorphicMenuButton.swift in Sources */,
 				D03C160029BD8539009B6320 /* LibraryView.swift in Sources */,
 				D03C162029BDAFDE009B6320 /* Liability.swift in Sources */,
+				D0ED1AEC29C43FC7008F58A4 /* MACRSTable.swift in Sources */,
 				D071A09D299DB1BB006C8471 /* AVPlayer+Thumbnail.swift in Sources */,
 				D071A093299DB1BB006C8471 /* CustomizedButton.swift in Sources */,
 				D071A08C299DB1BB006C8471 /* ReusableMessageView.swift in Sources */,
@@ -1094,14 +1131,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D0ED1AD129C3F1EC008F58A4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.37.0;
-			};
-		};
 		D0FB887829A879C000A63685 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
@@ -1117,16 +1146,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D0FB887829A879C000A63685 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
 			productName = YouTubeiOSPlayerHelper;
-		};
-		D0ED1AD229C3F1EC008F58A4 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D0ED1AD129C3F1EC008F58A4 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		D0ED1AD429C3F1EC008F58A4 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D0ED1AD129C3F1EC008F58A4 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
 		};
 		D0FB887929A879C000A63685 /* YouTubeiOSPlayerHelper */ = {
 			isa = XCSwiftPackageProductDependency;
