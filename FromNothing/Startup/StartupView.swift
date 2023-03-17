@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import YouTubeiOSPlayerHelper
 
 //MARK: Startup View, Holder for onboarding, Authorized Holder, and Signup
 ///This view is the first true screen of the app, but has no display. It acts as a holder for the app.
@@ -29,9 +28,6 @@ struct StartupView: View {
         //actual app entry
         case .authorized:
             AuthorizedView(viewModel: AuthViewModel())
-        //signup view
-        case .signup:
-            SignupView(viewModel: SignupViewModel(service: AuthServiceImplementation(), onboardResetDelegate: OnboardingViewModel(delegate: self.viewModel, service: OnboardingServiceImplementation()), loginFlowResetDelegate: self.viewModel))
         }
     }
 }

@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct AuthorizedView: View {
-   
     @ObservedObject var viewModel: AuthViewModel
     var body: some View {
-        Text("Hello, World!")
-        Text("Seeing if this works")
+        TabView {
+            NavigationView {
+                DealFormView()
+            }
+            NavigationView {
+                LibraryView()
+            }
+            NavigationView {
+                DueDiligenceView()
+            }
+            NavigationView {
+                CalculatorsView()
+            }
+            NavigationView {
+                DealAnalysisView()
+            }
+        }
     }
 }
 

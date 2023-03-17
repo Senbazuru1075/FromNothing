@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AVFoundation
-import YouTubeiOSPlayerHelper
 
 //MARK: Start of Onboarding View, Displays the array, start of app entry
 ///This is the first actual screen of the app

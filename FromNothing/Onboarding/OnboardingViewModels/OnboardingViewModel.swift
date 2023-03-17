@@ -7,8 +7,6 @@
 
 import Foundation
 import Combine
-import FirebaseCore
-import FirebaseAuth
 import SwiftUI
 
 //MARK: Protocols
@@ -95,9 +93,3 @@ extension OnboardingViewModel: OnboardingItemDelegate {
     }
 }
 
-extension OnboardingViewModel: OnboardingResetDelegate {
-    ///This delegate method resets the counter for the onboarding view model and helps to restart the onboarding process
-    func resetOnboarding() {
-        self.counter = 0
-    }
-}

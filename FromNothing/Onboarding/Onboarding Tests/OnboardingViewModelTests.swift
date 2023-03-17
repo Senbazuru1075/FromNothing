@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-@testable import DealHelper
+@testable import FromNothing
 
 class OnboardingViewModelTests: XCTestCase {
     private var onboardingViewModel: OnboardingViewModel!
