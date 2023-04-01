@@ -309,6 +309,19 @@
 			children = (
 				D03C162129BDB698009B6320 /* Business Models */,
 				D03C161829BDA1D6009B6320 /* Asset Models */,
+				D0ED1AD929C41EC7008F58A4 /* Currency.swift */,
+				D0ED1AE729C422AA008F58A4 /* ValidationErrors.swift */,
+				D0ED1ADB29C41F55008F58A4 /* AccountingMethod.swift */,
+				D0ED1ADF29C42037008F58A4 /* BusinessSegment.swift */,
+				D03C160929BD954B009B6320 /* BalanceSheet.swift */,
+				D0ED1ADD29C41F9A008F58A4 /* Asset+LiabilityCategories.swift */,
+				D0ED1AE529C42218008F58A4 /* HistoricalData.swift */,
+				D0ED1AE329C421C7008F58A4 /* BusinessSensitivity.swift */,
+				D0ED1AEB29C43FC7008F58A4 /* MACRSTable.swift */,
+				D0ED1AE929C437E3008F58A4 /* Asset.swift */,
+				D0ED1AE129C420FD008F58A4 /* Forecast.swift */,
+				D03C161F29BDAFDE009B6320 /* Liability.swift */,
+				D03C160729BD918E009B6320 /* Business.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
