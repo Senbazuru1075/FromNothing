@@ -22,9 +22,10 @@ import SwiftUI
 @main
 struct FromNothingApp: App {
     @StateObject var viewModel: StartupViewModel = StartupViewModel()
+    @Environment(\.colorScheme) var isDarkMode: ColorScheme
     var body: some Scene {
         WindowGroup {
-            StartupView(viewModel: viewModel)
+            StartupView(viewModel: viewModel, isDarkMode: isDarkMode)
                
         }
     }

@@ -13,10 +13,11 @@ struct StartupView: View {
     
     //MARK: View Models
     @ObservedObject var viewModel: StartupViewModel
-    
+    var isDarkMode: ColorScheme
     //MARK: Initializers
-    init(viewModel: StartupViewModel) {
+    init(viewModel: StartupViewModel, isDarkMode: ColorScheme) {
         self.viewModel = viewModel
+        self.isDarkMode = isDarkMode
     }
     
     //MARK: Start of View
@@ -27,7 +28,7 @@ struct StartupView: View {
             OnboardingView(viewModel: OnboardingViewModel(delegate: self.viewModel, service: OnboardingServiceImplementation()))
         //actual app entry
         case .authorized:
-            AuthorizedView(viewModel: AuthViewModel())
+            AuthorizedView(isDarkMode: isDarkMode, viewModel: AuthViewModel())
         }
     }
 }

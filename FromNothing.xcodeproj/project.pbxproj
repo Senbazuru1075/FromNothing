@@ -67,6 +67,8 @@
 		D07982A429A16CB200649021 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07982A329A16CB200649021 /* FileManagerService.swift */; };
 		D07982A629A1B30300649021 /* Task+Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07982A529A1B30300649021 /* Task+Sleep.swift */; };
 		D0C2D49F29A4035300741E1E /* UIApplication+UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2D49E29A4035300741E1E /* UIApplication+UIWindow.swift */; };
+		D0CF846429D8C66A007E749A /* DealFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF846329D8C66A007E749A /* DealFormViewModel.swift */; };
+		D0CF846629D8CE60007E749A /* DealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF846529D8CE60007E749A /* DealModel.swift */; };
 		D0D2A27529A2ADB800BA4F43 /* YoutubeMoviePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A27429A2ADB800BA4F43 /* YoutubeMoviePlayer.swift */; };
 		D0ED1ACD29C3D1E3008F58A4 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = D0ED1ACC29C3D1E3008F58A4 /* YouTubeiOSPlayerHelper */; };
 		D0ED1AD829C40A15008F58A4 /* IncomeStatementUsageClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1AD729C40A15008F58A4 /* IncomeStatementUsageClasses.swift */; };
@@ -165,6 +167,8 @@
 		D07982A329A16CB200649021 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
 		D07982A529A1B30300649021 /* Task+Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Sleep.swift"; sourceTree = "<group>"; };
 		D0C2D49E29A4035300741E1E /* UIApplication+UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+UIWindow.swift"; sourceTree = "<group>"; };
+		D0CF846329D8C66A007E749A /* DealFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealFormViewModel.swift; sourceTree = "<group>"; };
+		D0CF846529D8CE60007E749A /* DealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealModel.swift; sourceTree = "<group>"; };
 		D0D2A27429A2ADB800BA4F43 /* YoutubeMoviePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeMoviePlayer.swift; sourceTree = "<group>"; };
 		D0ED1AD729C40A15008F58A4 /* IncomeStatementUsageClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeStatementUsageClasses.swift; sourceTree = "<group>"; };
 		D0ED1AD929C41EC7008F58A4 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -262,6 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				D03C15FD29BD8525009B6320 /* DealFormView.swift */,
+				D0CF846329D8C66A007E749A /* DealFormViewModel.swift */,
+				D0CF846529D8CE60007E749A /* DealModel.swift */,
 			);
 			path = "Deal Forms";
 			sourceTree = "<group>";
@@ -303,19 +309,6 @@
 			children = (
 				D03C162129BDB698009B6320 /* Business Models */,
 				D03C161829BDA1D6009B6320 /* Asset Models */,
-				D0ED1AD929C41EC7008F58A4 /* Currency.swift */,
-				D0ED1AE729C422AA008F58A4 /* ValidationErrors.swift */,
-				D0ED1ADB29C41F55008F58A4 /* AccountingMethod.swift */,
-				D0ED1ADF29C42037008F58A4 /* BusinessSegment.swift */,
-				D03C160929BD954B009B6320 /* BalanceSheet.swift */,
-				D0ED1ADD29C41F9A008F58A4 /* Asset+LiabilityCategories.swift */,
-				D0ED1AE529C42218008F58A4 /* HistoricalData.swift */,
-				D0ED1AE329C421C7008F58A4 /* BusinessSensitivity.swift */,
-				D0ED1AEB29C43FC7008F58A4 /* MACRSTable.swift */,
-				D0ED1AE929C437E3008F58A4 /* Asset.swift */,
-				D0ED1AE129C420FD008F58A4 /* Forecast.swift */,
-				D03C161F29BDAFDE009B6320 /* Liability.swift */,
-				D03C160729BD918E009B6320 /* Business.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -323,6 +316,16 @@
 		D03C161829BDA1D6009B6320 /* Asset Models */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED1AE729C422AA008F58A4 /* ValidationErrors.swift */,
+				D0ED1ADB29C41F55008F58A4 /* AccountingMethod.swift */,
+				D0ED1ADF29C42037008F58A4 /* BusinessSegment.swift */,
+				D0ED1ADD29C41F9A008F58A4 /* Asset+LiabilityCategories.swift */,
+				D0ED1AE529C42218008F58A4 /* HistoricalData.swift */,
+				D0ED1AE329C421C7008F58A4 /* BusinessSensitivity.swift */,
+				D0ED1AE929C437E3008F58A4 /* Asset.swift */,
+				D0ED1AEB29C43FC7008F58A4 /* MACRSTable.swift */,
+				D0ED1AE129C420FD008F58A4 /* Forecast.swift */,
+				D0ED1AD929C41EC7008F58A4 /* Currency.swift */,
 			);
 			path = "Asset Models";
 			sourceTree = "<group>";
@@ -332,6 +335,9 @@
 			children = (
 				D0ED1AD729C40A15008F58A4 /* IncomeStatementUsageClasses.swift */,
 				D03C160D29BD957A009B6320 /* IncomeStatement.swift */,
+				D03C160929BD954B009B6320 /* BalanceSheet.swift */,
+				D03C160729BD918E009B6320 /* Business.swift */,
+				D03C161F29BDAFDE009B6320 /* Liability.swift */,
 				D03C160B29BD9564009B6320 /* CashflowStatement.swift */,
 			);
 			path = "Business Models";
@@ -725,6 +731,7 @@
 				D071A091299DB1BB006C8471 /* ReusableSemiCircleCutoutHeader.swift in Sources */,
 				D071A088299DB1BB006C8471 /* ReusableOverallRanking.swift in Sources */,
 				D0ED1AE629C42218008F58A4 /* HistoricalData.swift in Sources */,
+				D0CF846429D8C66A007E749A /* DealFormViewModel.swift in Sources */,
 				D0ED1AEA29C437E3008F58A4 /* Asset.swift in Sources */,
 				D071A0C6299DB1F5006C8471 /* OnboardingView.swift in Sources */,
 				D071A09A299DB1BB006C8471 /* CustomizedTextField.swift in Sources */,
@@ -750,6 +757,7 @@
 				D03C160A29BD954B009B6320 /* BalanceSheet.swift in Sources */,
 				D071A0A1299DB1BB006C8471 /* VideoView.swift in Sources */,
 				D071A08D299DB1BB006C8471 /* ReusableProfileBoxElement.swift in Sources */,
+				D0CF846629D8CE60007E749A /* DealModel.swift in Sources */,
 				D0ED1AE429C421C7008F58A4 /* BusinessSensitivity.swift in Sources */,
 				D03C160C29BD9564009B6320 /* CashflowStatement.swift in Sources */,
 				D071A09E299DB1BB006C8471 /* BrainCloudNetworking.swift in Sources */,

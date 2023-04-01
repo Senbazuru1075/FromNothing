@@ -9,16 +9,16 @@ import Foundation
 
 final class Business {
     var businessName: String
-    var purchasePrice: Double
+    var businessDescription: String?
     var balanceSheet: BalanceSheet?
     var incomeStatement: IncomeStatement?
     var cashflowStatement: CashflowStatement?
     var historicalData: HistoricalData?
-    var businessSensitivity: BusinessSensitivity
+    var businessSensitivity: BusinessSensitivity?
     
-    init(businessName: String, purchasePrice: Double, balanceSheet: BalanceSheet? = nil, incomeStatement: IncomeStatement? = nil, cashflowStatement: CashflowStatement? = nil, historicalData: HistoricalData? = nil, businessSensitivity: BusinessSensitivity) {
+    init(businessName: String, businessDescription: String? = nil, balanceSheet: BalanceSheet? = nil, incomeStatement: IncomeStatement? = nil, cashflowStatement: CashflowStatement? = nil, historicalData: HistoricalData? = nil, businessSensitivity: BusinessSensitivity? = nil) {
         self.businessName = businessName
-        self.purchasePrice = purchasePrice
+        self.businessDescription = businessDescription
         self.balanceSheet = balanceSheet
         self.incomeStatement = incomeStatement
         self.cashflowStatement = cashflowStatement
