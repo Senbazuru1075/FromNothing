@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct AuthorizedView: View {
+    var isDarkMode: ColorScheme
     @ObservedObject var viewModel: AuthViewModel
     var body: some View {
         TabView {
             NavigationView {
-                DealFormView()
+                DealFormView(viewModel: DealFormViewModel(), isDarkMode: isDarkMode)
+                    .navigationTitle("Deal Form")
             }
             NavigationView {
                 LibraryView()
@@ -32,6 +34,6 @@ struct AuthorizedView: View {
 
 struct AuthorizedView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthorizedView(viewModel: AuthViewModel())
+        AuthorizedView(isDarkMode: ColorScheme(.light)!, viewModel: AuthViewModel())
     }
 }
